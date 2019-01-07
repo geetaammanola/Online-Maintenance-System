@@ -12,6 +12,7 @@ import com.serv.web.dao.dataDAO;
 import com.serv.web.modal.data;
 
 
+
 public class storeDataController extends HttpServlet {
 
 	/**
@@ -19,19 +20,26 @@ public class storeDataController extends HttpServlet {
 	 */
 	private static final long serialVersionUID = 1L;
 
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-	 
-	 int id = Integer.parseInt(request.getParameter("id"));
-	 dataDAO dao = new dataDAO();
-	data d1 = dao.getData(id);
-	 
-	 request.setAttribute("data", d1);
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
 		
-		RequestDispatcher rd =request.getRequestDispatcher("showData.jsp");
-		rd.forward(request,response);
+		int id = Integer.parseInt(request.getParameter("aid"));
+		dataDAO dao = new dataDAO();
+		data d1 = dao.getData(id);
 		
+		request.setAttribute("data", d1);
+		
+		RequestDispatcher rd = request.getRequestDispatcher("showData.jsp");
+		rd.forward(request, response);
+
+		//HttpSession session = request.getSession();
+		//session.setAttribute("alien", a1);
+
+		//response.sendRedirect("showAlien.jsp");
+		
+		
+
 		
 	}
 
-	
 }
