@@ -9,11 +9,9 @@
 </head>
 <body bgcolor="cyan">
 	<%
-	
-	data d1 = (data)request.getAttribute("data");
+		data d1 = (data)request.getAttribute("data");
 
-	out.println(d1);
-	
+		out.println(d1);
 	%>
 
 </body>

@@ -13,7 +13,7 @@ public class dataDAO
 	{
 		
 		data d = new data();
-		
+	/*	
 		try
 		{
 			Class.forName("com.mysql.jdbc.Driver");
@@ -31,11 +31,12 @@ public class dataDAO
 			System.out.println(e);
 		}
 		
-		return d;
+		return d;*/
 		
-		//d.setId(101);
-		//d.setName("Veronica");
-		//d.setTech("Java");
+		d.setId(101);
+		d.setName("Veronica");
+		d.setTech("Java");
+		return d;
 
 	
 	}

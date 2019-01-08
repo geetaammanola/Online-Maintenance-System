@@ -1,12 +1,12 @@
 <html>
 <body>
-<h2>Hello World!</h2>
-<form action="storeData">
+	<h2>Hello World!</h2>
+	<form action="storeData">
 
-<input type="text" name="aid">
-<input type="submit">
+		<input type="text" name="aid"> 
+		<input type="submit">
 
 
-</form>
+	</form>
 </body>
 </html>
