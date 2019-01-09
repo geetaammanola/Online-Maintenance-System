@@ -1,6 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
-
+    pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,7 +11,7 @@
 <meta name="description" content="">
 <meta name="author" content="">
 
-<title>Online Maintenance</title>
+<title> Login - Online Maintenance</title>
 
 <!-- Bootstrap Core CSS -->
 <link
@@ -80,7 +79,8 @@
 		</div>
 		<!-- /.container-fluid -->
 	</nav>
-
+	
+	
 	<!-- Header -->
 	<header>
 		<div class="container">
@@ -91,71 +91,11 @@
 			</div>
 		</div>
 	</header>
-
-	<!-- Services Section -->
-	<section id="services">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12 text-center">
-					<h2 class="section-heading">Services</h2>
-					<h3 class="section-subheading text-muted">Lorem ipsum dolor
-						sit amet consectetur.</h3>
-				</div>
-			</div>
-			<div class="row text-center">
-			 
-			 
-			<!--  <div class="col-md-4 col-sm-6 portfolio-item">
-				
-						<div class="portfolio-hover">
-							<div class="portfolio-hover-content">
-								
-							</div>
-						</div> <img src="http://localhost:8080/OnlineMaintenance/assets/images/dreams.png" class="img-responsive"
-						alt="">
-					</a>
-					
-				</div>--> 
-				
-			
-				<div class="col-md-4">
-					<span class="fa-stack fa-4x"> <i
-						class="fa fa-circle fa-stack-2x text-primary"></i> <i
-						class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
-					</span>
-					<h4 class="service-heading">E-Commerce</h4>
-					<p class="text-muted">Lorem ipsum dolor sit amet, consectetur
-						adipisicing elit. Minima maxime quam architecto quo inventore
-						harum ex magni, dicta impedit.</p>
-						<a href="#services" class="page-scroll btn btn-xl">View More</a>
-				</div>
-				
-				<div class="col-md-4">
-					<span class="fa-stack fa-4x"> <i
-						class="fa fa-circle fa-stack-2x text-primary"></i> <i
-						class="fa fa-laptop fa-stack-1x fa-inverse"></i>
-					</span>
-					<h4 class="service-heading">Responsive Design</h4>
-					<p class="text-muted">Lorem ipsum dolor sit amet, consectetur
-						adipisicing elit. Minima maxime quam architecto quo inventore
-						harum ex magni, dicta impedit.</p>
-						<a href="#services" class="page-scroll btn btn-xl">View More</a>
-				</div>
-				<div class="col-md-4">
-					<span class="fa-stack fa-4x"> <i
-						class="fa fa-circle fa-stack-2x text-primary"></i> <i
-						class="fa fa-lock fa-stack-1x fa-inverse"></i>
-					</span>
-					<h4 class="service-heading">Web Security</h4>
-					<p class="text-muted">Lorem ipsum dolor sit amet, consectetur
-						adipisicing elit. Minima maxime quam architecto quo inventore
-						harum ex magni, dicta impedit.</p>
-						<a href="#services" class="page-scroll btn btn-xl">View More</a>
-				</div>
-			</div>
-		</div>
-	</section>
-
+	
+	
+	<br /><br /><br /><br /><br /><br />
+	
+	
 	
 	<footer>
 		<div class="container">
@@ -189,8 +129,7 @@
 	<!-- Theme JavaScript -->
 	<script
 		src=" http://localhost:8080/OnlineMaintenance/assets/jquery/agency.min.js"></script>
-
+	
 
 </body>
-
 </html>
