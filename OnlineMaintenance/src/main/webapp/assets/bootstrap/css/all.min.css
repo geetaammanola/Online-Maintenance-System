@@ -5008,7 +5008,7 @@ to {
 	font-style: normal;
 	font-weight: 400;
 	src:
-		url(http://localhost:8080/OnlineMaintenance/assets/font-awesome/fa-regular-400.eot);
+		url(./assets/font-awesome/fa-regular-400.eot);
 	src:
 		url(http://localhost:8080/OnlineMaintenance/assets/font-awesome/fa-regular-400.eot?#iefix)
 		format("embedded-opentype"),

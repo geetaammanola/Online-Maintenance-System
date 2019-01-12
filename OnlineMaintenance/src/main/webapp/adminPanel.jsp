@@ -2,6 +2,7 @@
 	pageEncoding="ISO-8859-1"%>
 
 
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,27 +15,21 @@
 <meta name="description" content="">
 <meta name="author" content="">
 
-<title>Admin - Dashboard</title>
+<title>SB Admin - Dashboard</title>
 
 <!-- Bootstrap core CSS-->
-<link
-	href="./assets/bootstrap/css/bootstrap.min.css"
-	rel="stylesheet">
+<link href="./assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
 <!-- Custom fonts for this template-->
-<link
-	href="./assets/bootstrap/css/all.min.css"
-	rel="stylesheet" type="text/css">
+<link href="./assets/bootstrap/css/all.min.css" rel="stylesheet"
+	type="text/css">
 
 <!-- Page level plugin CSS-->
-<link
-	href="./assets/bootstrap/css/dataTables.bootstrap4.css"
+<link href="./assets/bootstrap/css/dataTables.bootstrap4.css"
 	rel="stylesheet">
 
 <!-- Custom styles for this template-->
-<link
-	href="./assets/bootstrap/css/admin.css"
-	rel="stylesheet">
+<link href="./assets/bootstrap/css/admin.css" rel="stylesheet">
 
 </head>
 
@@ -766,35 +761,26 @@
 	</div>
 
 	<!-- Bootstrap core JavaScript-->
-	<script
-		src="http://localhost:8080/OnlineMaintenance/assets/jquery/jquery.js"></script>
-	<script
-		src="http://localhost:8080/OnlineMaintenance/assets/jquery/jquery.min.js"></script>
-	<script
-		src="http://localhost:8080/OnlineMaintenance/assets/jquery/bootstrap.bundle.min.js"></script>
+	<script src="./assets/jquery/jquery.min.js"></script>
+	<script src="./assets/jquery/bootstrap.bundle.min.js"></script>
 
 	<!-- Core plugin JavaScript-->
-	<script
-		src="http://localhost:8080/OnlineMaintenance/assets/jquery/jquery.easing.min.js"></script>
+	<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
 	<!-- Page level plugin JavaScript-->
-	<script
-		src="http://localhost:8080/OnlineMaintenance/assets/jquery/Chart.min.js"></script>
-	<script
-		src="http://localhost:8080/OnlineMaintenance/assets/jquery/jquery.dataTables.js"></script>
-	<script
-		src="http://localhost:8080/OnlineMaintenance/assets/jquery/dataTables.bootstrap4.js"></script>
+	<script src="./assets/jquery/Chart.min.js"></script>
+	<script src="./assets/jquery/jquery.dataTables.js"></script>
+	<script src="./assets/jquery/dataTables.bootstrap4.js"></script>
 
 	<!-- Custom scripts for all pages-->
-	<script
-		src="http://localhost:8080/OnlineMaintenance/assets/jquery/admin.min.js"></script>
+	<script src="./assets/jquery/admin.min.js"></script>
 
 	<!-- Demo scripts for this page-->
-	<script
-		src="http://localhost:8080/OnlineMaintenance/assets/jquery/datatables-demo.js"></script>
-	<script
-		src="http://localhost:8080/OnlineMaintenance/assets/jquery/chart-area-demo.js"></script>
+	<script src="./assets/jquery/datatables-demo.js"></script>
+	<script src="./assets/jquery/chart-area-demo.js"></script>
 
 </body>
 
 </html>
+
+
