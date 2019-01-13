@@ -189,6 +189,8 @@ iframe {
 			<div class="col-sm-9"> -->
 
 					<div class="row">
+					
+					 <a href="#" class="btn btn-primary btn-xs pull-right"><b>+</b> Add new categories</a>
 
 						<div class="pull-right">
 							<button class="btn btn-success btn-xs" data-title="Delete"

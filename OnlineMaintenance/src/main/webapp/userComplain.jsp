@@ -1,4 +1,8 @@
-<link
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+    
+    
+ <link
 	href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css"
 	rel="stylesheet" id="bootstrap-css">
 <script

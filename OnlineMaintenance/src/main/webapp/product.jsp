@@ -32,23 +32,24 @@
 <nav aria-label="breadcrumb">
   <ol class="breadcrumb">
     <li class="breadcrumb-item"><a href="#">DashBoard</a></li>
-    <li class="breadcrumb-item active" aria-current="page">Employee List</li>
+    <li class="breadcrumb-item active" aria-current="page">Product List</li>
   </ol>
 </nav>
 
 
 <nav aria-label="breadcrumb">
   <ol class="breadcrumb">
-    <li class="breadcrumb-item active" aria-current="page"><strong>Employee Details</strong></li>
+    <li class="breadcrumb-item active" aria-current="page"><strong>Product Details</strong></li>
   </ol>
 </nav>
+
 
 
 <div class="container">
     <div class="row col-md-8  custyle">
     <table class="table table-striped custab">
     <thead>
-    <a href="#" class="btn btn-primary btn-xs pull-right"><b>+</b>New Employee</a>
+    <a href="#" class="btn btn-primary btn-xs pull-right"><b>+</b> Add new categories</a>
         <tr>
             <th>ID</th>
             <th>Title</th>
