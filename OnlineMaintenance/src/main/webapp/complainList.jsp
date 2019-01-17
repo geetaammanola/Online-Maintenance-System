@@ -20,68 +20,140 @@
 
 
 
-<link
-	href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"
-	rel="stylesheet" id="bootstrap-css">
-<script
-	src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
 
 
 
-<script type="text/javascript">
-@import "//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css";
-@import "http://fonts.googleapis.com/css?family=Roboto:400,500";
 
 
-#sum_box h4 {
-    text-align: left;
-    margin-top: 0px;
-    font-size: 30px;
-    margin-bottom: 0px;
-    padding-bottom: 0px;
+
+<style>
+
+.circle-tile {
+    margin-bottom: 15px;
+    text-align: center;
+}
+.circle-tile-heading {
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-radius: 100%;
+    color: #FFFFFF;
+    height: 80px;
+    margin: 0 auto -40px;
+    position: relative;
+    transition: all 0.3s ease-in-out 0s;
+    width: 80px;
+}
+.circle-tile-heading .fa {
+    line-height: 80px;
+}
+.circle-tile-content {
+    padding-top: 50px;
+}
+.circle-tile-number {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1;
+    padding: 5px 0 15px;
+}
+.circle-tile-description {
+    text-transform: uppercase;
+}
+.circle-tile-footer {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: rgba(255, 255, 255, 0.5);
+    display: block;
+    padding: 5px;
+    transition: all 0.3s ease-in-out 0s;
+}
+.circle-tile-footer:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+}
+.circle-tile-heading.dark-blue:hover {
+    background-color: #2E4154;
+}
+.circle-tile-heading.green:hover {
+    background-color: #138F77;
+}
+.circle-tile-heading.orange:hover {
+    background-color: #DA8C10;
+}
+.circle-tile-heading.blue:hover {
+    background-color: #2473A6;
+}
+.circle-tile-heading.red:hover {
+    background-color: #CF4435;
+}
+.circle-tile-heading.purple:hover {
+    background-color: #7F3D9B;
+}
+.tile-img {
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.9);
 }
 
-
-#sum_box .db:hover {
-    background: #40516f;
-    color: #fff;
+.dark-blue {
+    background-color: #34495E;
+}
+.green {
+    background-color: #00b300;
+}
+.blue {
+    background-color: #0066ff;
+}
+.orange {
+    background-color: #F39C12;
+}
+.red {
+    background-color: #ff0000;
+}
+.purple {
+    background-color: #884dff;
+}
+.dark-gray {
+    background-color: #7F8C8D;
+}
+.gray {
+    background-color: #95A5A6;
+}
+.light-gray {
+    background-color: #BDC3C7;
+}
+.yellow {
+    background-color: #F1C40F;
+}
+.text-dark-blue {
+    color: #34495E;
+}
+.text-green {
+    color: #16A085;
+}
+.text-blue {
+    color: #2980B9;
+}
+.text-orange {
+    color: #F39C12;
+}
+.text-red {
+    color: #E74C3C;
+}
+.text-purple {
+    color: #8E44AD;
+}
+.text-faded {
+    color: rgba(255, 255, 255, 0.7);
 }
 
-
-
-
-#sum_box .db:hover .icon {
-    opacity: 1;
-    color: #999999;
-}
-
-#sum_box .icon {
-    color: #fff;
-    font-size: 55px;
-    margin-top: 7px;
-    margin-bottom: 0px;
-    float: right;
-}
-
-
-.panel.income.db.mbm{
-        background-color: #5cb85c;
-}
-
-.panel.profit.db.mbm{
-        background-color: #5bc0de;
-}
-
-
-.panel.task.db.mbm{
-        background-color: #f0ad4e;
-}
 
 
  
 
-</script>
+</style>
 
 </head>
 
@@ -122,56 +194,62 @@
 
 
 
-			<div id="sum_box" class="row mbl">
-				<div class="col-sm-6 col-md-3">
-					<div class="panel income db mbm">
-						<div class="panel-body">
-							<p class="icon">
-							
-							<i class="icon fa fa-users"></i>
-								
-							</p>
-							<h4 class="value">
-								<span>812</span><span>$</span>
-							</h4>
-							<p class="description">Saldo</p>
 
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-6 col-md-3">
-					<div class="panel profit db mbm">
-						<div class="panel-body">
-							<p class="icon">
-							<i class="icon fa fa-users"></i>
-							<i class="icon fa fa-user-check"></i>
-								<i class="icon fa fa-shopping-cart"></i>
-							</p>
-							<h4 class="value">
-								<span data-counter="" data-start="10" data-end="50"
-									data-step="1" data-duration="0">189</span><span>$</span>
-							</h4>
-							<p class="description">Mensajes enviados</p>
 
-						</div>
-					</div>
-				</div>
 
-				<div class="col-sm-6 col-md-3">
-					<div class="panel task db mbm">
-						<div class="panel-body">
-							<p class="icon">
-								<i class="icon fa fa-signal"></i>
-							</p>
-							<h4 class="value">
-								<span>155</span>
-							</h4>
-							<p class="description">Mensajes recibidos</p>
 
-						</div>
-					</div>
-				</div>
+<div class="container bootstrap snippet">
+  <div class="row">
+  
+    <div class="col-lg-2 col-sm-6">
+      <div class="circle-tile ">
+        <a href="#"><div class="circle-tile-heading blue"><i class="fa fa-users fa-fw fa-3x"></i></div></a>
+        <div class="circle-tile-content blue">
+          <div class="circle-tile-description text-faded"><strong>Total Complain</strong> </div>
+          <div class="circle-tile-number text-faded ">10</div>
+          <a class="circle-tile-footer" href="#">More Info<i class="fa fa-chevron-circle-right"></i></a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="col-lg-2 col-sm-6">
+      <div class="circle-tile ">
+        <a href="#"><div class="circle-tile-heading red"><i class="fa fa-users fa-fw fa-3x"></i></div></a>
+        <div class="circle-tile-content red">
+          <div class="circle-tile-description text-faded"> <strong>Active Complain</strong></div>
+          <div class="circle-tile-number text-faded ">265</div>
+          <a class="circle-tile-footer" href="#">More Info<i class="fa fa-chevron-circle-right"></i></a>
+        </div>
+      </div>
+    </div>
+     
+    <div class="col-lg-2 col-sm-6">
+      <div class="circle-tile ">
+        <a href="#"><div class="circle-tile-heading green"><i class="fa fa-users fa-fw fa-3x"></i></div></a>
+        <div class="circle-tile-content green">
+          <div class="circle-tile-description text-faded"><strong> Resolve Complain </strong></div>
+          <div class="circle-tile-number text-faded ">10</div>
+          <a class="circle-tile-footer" href="#">More Info<i class="fa fa-chevron-circle-right"></i></a>
+        </div>
+      </div>
+    </div> 
+    
+    
+    
+    
+    
+  </div> 
+</div>  
+  
+</div>
+</div>
 
-			</div>
+
+
+
+
+
+
+
 			</body>
 			</html>

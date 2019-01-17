@@ -69,14 +69,16 @@
         <span class="icon-bar"></span>
     </div>
     <div class="list-group">
-        <span href="#" class="list-group-item active">
+        <span href="adminHome.jsp" class="list-group-item active">
             Admin DashBoard
             <span class="pull-right" id="slide-submenu">
                 <i class="fa fa-times"></i>
             </span>
         </span>
-        <a href="AdminHome.jsp" class="list-group-item">
-            <i class="fa fa-comment-o" class="active"></i> Home
+        <a href="adminHome.jsp" class="list-group-item">
+      
+         <i class="fa fa-tachometer-alt"></i>
+           <!--  <i class="fa fa-comment-o" class="active"></i>  -->Home
         </a>
         <a href="complainList.jsp" class="list-group-item">
             <i class="fa fa-comment-o" class="active"></i> Complain List
