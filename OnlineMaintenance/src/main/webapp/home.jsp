@@ -127,7 +127,7 @@
 				<div class="col-md-4">
 					<span class="fa-stack fa-4x"> <i
 						class="fa fa-circle fa-stack-2x text-primary"></i> <i
-						class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+						class="fa fa-edit fa-stack-1x fa-inverse"></i>
 					</span>
 					<h4 class="service-heading">E-Commerce</h4>
 					<p class="text-muted">Lorem ipsum dolor sit amet, consectetur
@@ -139,7 +139,7 @@
 				<div class="col-md-4">
 					<span class="fa-stack fa-4x"> <i
 						class="fa fa-circle fa-stack-2x text-primary"></i> <i
-						class="fa fa-laptop fa-stack-1x fa-inverse"></i>
+						class="fa fa-users-cog fa-stack-1x fa-inverse"></i>
 					</span>
 					<h4 class="service-heading">Responsive Design</h4>
 					<p class="text-muted">Lorem ipsum dolor sit amet, consectetur

@@ -1,6 +1,6 @@
 package com.serv.web.dao;
 
-import java.sql.*;
+import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
@@ -13,32 +13,35 @@ public class dataDAO
 	{
 		
 		data d = new data();
-	/*	
+
 		try
 		{
 			Class.forName("com.mysql.jdbc.Driver");
-			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/OnlineMaintenance","root","");
+			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/OnlineMaintenance","root","root123");
 			Statement st = con.createStatement();
-			ResultSet rs = st.executeQuery("select * from data where id=" + id);
+			ResultSet rs = st.executeQuery("select * from mp where id =" + id );
 			if(rs.next())
 			{
 				d.setId(rs.getInt("id"));
-				d.setName(rs.getString("name"));
-				d.setTech(rs.getString("tech"));
+				d.setFname(rs.getString("fname"));
+				d.setLname(rs.getString("lname"));
+				d.setEmail(rs.getString("email"));
+				
 			}
 		}
 		catch(Exception e){
 			System.out.println(e);
 		}
 		
-		return d;*/
+		return d;
 		
-		d.setId(101);
+		/*	d.setId(101);
 		d.setName("Veronica");
 		d.setTech("Java");
 		return d;
 
 	
-	}
+	}*/
 
+}
 }

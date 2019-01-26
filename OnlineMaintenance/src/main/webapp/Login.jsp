@@ -51,16 +51,10 @@
 </nav>
 
 
-
-
-
 	<br>
 	<br>
 	<br>
 	<br>
-
-
-
 
 
 	<div class="container">
@@ -71,7 +65,7 @@
 					<div class="panel-title">Login</div>
 					<div
 						style="float: right; font-size: 80%; position: relative; top: -10px">
-						<a href="#"><text forecolor="white">Forgot password?</a>
+						<a href="#"><forecolor="white">Forgot password?</a>
 					</div>
 				</div>
 
@@ -82,18 +76,18 @@
 						
 						
 
-					<form  class="form-horizontal" action="login"  >
+					<form  class="form-horizontal" method="get" action="UserLoginSer"  >
 
 						<div style="margin-bottom: 25px" class="input-group">
 							<span class="input-group-addon"><i
-								class="glyphicon glyphicon-user"></i></span> <input id="login-username"
-								type="text" class="form-control" name="user" value=""
+								class="glyphicon glyphicon-user"></i></span> <input 
+								type="text" class="form-control" name="email" 
 								placeholder="username or email">
 						</div>
 
 						<div style="margin-bottom: 25px" class="input-group">
 							<span class="input-group-addon"><i
-								class="glyphicon glyphicon-lock"></i></span> <input id="login-password"
+								class="glyphicon glyphicon-lock"></i></span> <input 
 								type="password" class="form-control" name="password"
 								placeholder="password">
 						</div>

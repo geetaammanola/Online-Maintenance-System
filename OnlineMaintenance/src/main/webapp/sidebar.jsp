@@ -89,8 +89,8 @@
         <a href="emp.jsp" class="list-group-item">
             <i class="fa fa-user"></i> Employees
         </a>
-        <a href="#" class="list-group-item">
-            <i class="fa fa-folder-open-o"></i> Lorem ipsum <span class="badge">14</span>
+        <a href="addEmp.jsp" class="list-group-item">
+            <i class="fa fa-folder-open-o"></i> Add Emplolyee <span class="badge">14</span>
         </a>
         <a href="#" class="list-group-item">
             <i class="fa fa-bar-chart-o"></i> Lorem ipsumr <span class="badge">14</span>

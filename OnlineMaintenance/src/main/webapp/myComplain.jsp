@@ -1,5 +1,20 @@
+<%@page import="com.serv.web.modal.userLogin"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title>Online Maintenance</title>
 
 <link
 	href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"
@@ -7,6 +22,13 @@
 <script
 	src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+
+
+</head>
+
+<body >
+
 
 
 <div class="container">
@@ -112,3 +134,14 @@
 
 		</div>
 	</div>
+	
+	
+	<%
+				userLogin u1 = (userLogin)request.getAttribute("user");
+
+					out.println(u1);
+			%>
+	
+	
+	</body>
+	</html>

@@ -11,7 +11,7 @@ import javax.servlet.http.HttpSession;
 
 
 @WebServlet("/login")
-public class login extends HttpServlet {
+public class Userlogin extends HttpServlet {
 
 	/**
 	 * 

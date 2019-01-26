@@ -2,8 +2,30 @@ package com.serv.web.modal;
 
 public class data {
 	private int id;
-	private String name;
-	private String  tech;
+	private String fname;
+	private String lname;
+	private String  email;
+	
+	
+	public String getFname() {
+		return fname;
+	}
+	public void setFname(String fname) {
+		this.fname = fname;
+	}
+	public String getLname() {
+		return lname;
+	}
+	public void setLname(String lname) {
+		this.lname = lname;
+	}
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	
 	
 	public int getId() {
 		return id;
@@ -11,25 +33,11 @@ public class data {
 	public void setId(int id) {
 		this.id = id;
 	}
-	
-	public String getName() {
-		return name;
-	}
-	public void setName(String name) {
-		this.name = name;
-	}
-	
-	public String getTech() {
-		return tech;
-	}
-	public void setTech(String tech) {
-		this.tech = tech;
-	}
-	
 	@Override
 	public String toString() {
-		return "data [id=" + id + ", name=" + name + ", tech=" + tech + "]";
+		return "data [id=" + id + ", fname=" + fname + ", lname=" + lname + ", email=" + email + "]";
 	}
+	
 	
 	
 
