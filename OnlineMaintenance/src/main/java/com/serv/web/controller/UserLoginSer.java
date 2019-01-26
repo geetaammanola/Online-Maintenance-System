@@ -1,18 +1,17 @@
 package com.serv.web.controller;
 
 import java.io.IOException;
-
 import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
+import com.serv.web.DAOImpl.LoginFrmDbDAOImpl;
 import com.serv.web.util.DbUtil;
 
 /**
@@ -34,9 +33,25 @@ public class UserLoginSer extends HttpServlet {
 		String email = request.getParameter("email");
 		String password = request.getParameter("password");
 
+		LoginFrmDbDAOImpl dao = new LoginFrmDbDAOImpl();
+
+		if(dao.check(email, password))
+		{
+			HttpSession session = request.getSession();
+			session.setAttribute("email", email);
+			response.sendRedirect("complain.jsp");
+			
+		}
+		else {
+			response.sendRedirect("Login.jsp");
+			
+		}
+	}
+		
+		
 		// Connect to mysql and verify username password
 
-		try {
+	/*	try {
 			// gets a new connection
 
 			PreparedStatement ps = conn
@@ -54,9 +69,9 @@ public class UserLoginSer extends HttpServlet {
 			return;
 
 		} catch (SQLException e) {
-		
+
 			e.printStackTrace();
 		}
-	}
+	}*/
 
 }

@@ -59,7 +59,7 @@
 <body>
 
 	<%
-			if (session.getAttribute("username") == null) {
+			if (session.getAttribute("email") == null) {
 				response.sendRedirect("Login.jsp");
 			}
 		%>
