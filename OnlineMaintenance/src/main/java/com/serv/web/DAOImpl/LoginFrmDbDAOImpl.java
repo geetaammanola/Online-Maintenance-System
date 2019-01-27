@@ -16,15 +16,17 @@ public class LoginFrmDbDAOImpl {
   
 	
 	
-	String query="select * from userLogin where email=? and password=?";
+	String query="select 8 from userLogin where email=? and password=?";
 	
 	
-	public boolean check(String email , String password)
+	public boolean check(String email , String password )
 	{
 		try {
 			PreparedStatement st =conn.prepareStatement(query);
 			st.setString(1, email);
 			st.setString(2, password);
+		
+			
 			ResultSet rs=st.executeQuery();
 			if(rs.next()) {
 				return true;
