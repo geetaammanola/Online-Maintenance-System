@@ -36,7 +36,7 @@ public class ProductDAOImpl  implements ProductDAO {
 	@Override
 	public void deleteProduct( int productId ) {
 		try {
-			String query = "delete from product where ProductId=?";
+			String query = "delete from product where productId=?";
 			PreparedStatement preparedStatement = conn.prepareStatement(query);
 			preparedStatement.setInt(1, productId);
 			preparedStatement.executeUpdate();
