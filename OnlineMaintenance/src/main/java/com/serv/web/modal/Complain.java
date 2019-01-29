@@ -44,7 +44,6 @@ public class Complain {
 	public void setMobileNo(int mobileNo) {
 		this.mobileNo = mobileNo;
 	}
-
 	public Date getDate() {
 		return date;
 	}
@@ -52,7 +51,8 @@ public class Complain {
 	public void setDate(Date date) {
 		this.date = date;
 	}
-
+	
+	
 	public String getAddress() {
 		return address;
 	}
@@ -83,8 +83,5 @@ public class Complain {
 				+ mobileNo + ", date=" + date + ", address=" + address + ", category=" + category + ", Description="
 				+ Description + "]";
 	}
-	
-	
-	
 
 }

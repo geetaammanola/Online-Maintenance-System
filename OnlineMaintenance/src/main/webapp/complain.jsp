@@ -18,17 +18,6 @@
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 
-<!-- <link
-	href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
-	rel="stylesheet" id="bootstrap-css">
-<script
-	src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-<script
-	src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
-<script
-	src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
-<script
-	src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.js"></script>
 <script
 	src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
 
@@ -41,7 +30,7 @@
 	border-radius: 6px;
 }
 </style>
-
+<!--  
 
 <script type="text/javascript">
 	$(function() {
@@ -51,7 +40,7 @@
 		});
 	});
 </script>
-
+-->
 </head>
 
 
@@ -101,7 +90,7 @@
 			<div class="row">
 				<div class="col-sm-12 col-lg-12">
 					<h1 class="h1">
-						Post Comnplain  
+						Post Complain  
 					</h1>
 				</div>
 			</div>
@@ -119,8 +108,7 @@
 								<div class="form-group">
 									<label for="name"> Complainer Name</label>
 									
-										
-									
+						
 									 <input type="text" name="complainer"
 										class="form-control" placeholder="Enter name"
 										required="required" />
@@ -150,6 +138,20 @@
 								</div>
 								
 								
+								
+								<div class="form-group">
+									<label for="date"> Date</label>
+									<div class="input-group">
+										<span class="input-group-addon"><span
+											class="glyphicon glyphicon-date"></span> </span>
+											 <input
+											type="text" name="date" class="form-control" id="email"
+											placeholder="Enter date" required="required" />
+									</div>
+								</div>
+								
+								
+								<!--  
 								 <div class="form-group">
 								 <label for="name"> Date</label>
                         <div class="input-group">
@@ -157,7 +159,7 @@
                             <input type="date" name="date"  class="form-control" placeholder="Date of Birth" />
                         </div>
                     </div>
-                    
+                    -->
                     <div class="col-md-12">
                
 								<div class="form-group">

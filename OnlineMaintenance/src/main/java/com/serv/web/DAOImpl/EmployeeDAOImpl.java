@@ -27,11 +27,11 @@ public class EmployeeDAOImpl implements EmployeeDAO {
 			PreparedStatement preparedStatement = conn.prepareStatement(query);
 			preparedStatement.setString(1, employee.getRole());
 			preparedStatement.setString(2, employee.getName());
-			preparedStatement.setString(3, employee.getDoj());
+			preparedStatement.setDate(3,new java.sql.Date(employee.getDoj().getTime()));
 			preparedStatement.setString(4, employee.getEmail());
 			preparedStatement.setInt(5, employee.getMobileNo());
 			preparedStatement.setString(6, employee.getAddress());
-			preparedStatement.setString(7, employee.getDob());
+			//preparedStatement.setDate(7, new java.sql.Date(employee.getDob().getTime()));
 
 			preparedStatement.executeUpdate();
 			preparedStatement.close();
@@ -46,6 +46,7 @@ public class EmployeeDAOImpl implements EmployeeDAO {
 			String query = "delete from employee where eid=?";
 			PreparedStatement preparedStatement = conn.prepareStatement(query);
 			preparedStatement.setInt(1, eid);
+			
 			preparedStatement.executeUpdate();
 			preparedStatement.close();
 		} catch (SQLException e) {
@@ -61,11 +62,11 @@ public class EmployeeDAOImpl implements EmployeeDAO {
 
 			preparedStatement.setString(1, employee.getRole());
 			preparedStatement.setString(2, employee.getName());
-			preparedStatement.setString(3, employee.getDoj());
+			preparedStatement.setDate(3, new java.sql.Date(employee.getDoj().getTime()));
 			preparedStatement.setString(4, employee.getEmail());
 			preparedStatement.setInt(5, employee.getMobileNo());
 			preparedStatement.setString(6, employee.getAddress());
-			preparedStatement.setString(7, employee.getDob());
+			preparedStatement.setDate(7, new java.sql.Date(employee.getDob().getTime()));
 			preparedStatement.setInt(8, employee.getEid());
 			preparedStatement.executeUpdate();
 			preparedStatement.close();
@@ -85,10 +86,11 @@ public class EmployeeDAOImpl implements EmployeeDAO {
 				emp.setEid(resultSet.getInt("eid"));
 				emp.setRole(resultSet.getString("role"));
 				emp.setName(resultSet.getString("name"));
+				emp.setDob(resultSet.getDate("doj"));
 				emp.setEmail(resultSet.getString("email"));
 				emp.setMobileNo(resultSet.getInt("mobileNo"));
 				emp.setAddress(resultSet.getString("address"));
-				emp.setDob(resultSet.getString("dob"));
+				emp.setDob(resultSet.getDate("dob"));
 
 				employees.add(emp);
 			}
@@ -113,10 +115,11 @@ public class EmployeeDAOImpl implements EmployeeDAO {
 				employee.setEid(resultSet.getInt("eid"));
 				employee.setRole(resultSet.getString("role"));
 				employee.setName(resultSet.getString("name"));
+				employee.setDob(resultSet.getDate("doj"));
 				employee.setEmail(resultSet.getString("email"));
 				employee.setMobileNo(resultSet.getInt("mobileNo"));
 				employee.setAddress(resultSet.getString("address"));
-				employee.setDob(resultSet.getString("dob"));
+				employee.setDob(resultSet.getDate("dob"));
 
 			}
 			resultSet.close();

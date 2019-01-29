@@ -53,7 +53,8 @@
 			</div>
 			<div>
 				<label for="dob">DOB</label> <input type="text" name="dob"
-					value="<c:out value="${employee.dob}" />" placeholder="dob" />
+					value="<fmt:formatDate pattern="yyyy/MM/dd/"  value="${employee.dob}" />" 
+					 placeholder="dob" />
 			</div>
 			
 			<div>

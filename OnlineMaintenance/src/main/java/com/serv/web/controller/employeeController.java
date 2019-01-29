@@ -1,7 +1,9 @@
 package com.serv.web.controller;
 
 import java.io.IOException;
-
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -63,8 +65,8 @@ public class employeeController extends HttpServlet {
 		
 		employee.setRole(request.getParameter("role"));
 		employee.setName(request.getParameter("name"));
-		employee.setDoj(request.getParameter("doj"));
-		/*
+		//employee.setDoj(request.getParameter("doj"));
+		
 		try {
 			Date doj = new SimpleDateFormat("yyyy/MM/dd").parse(request.getParameter("doj"));
 			employee.setDoj(doj);
@@ -72,18 +74,18 @@ public class employeeController extends HttpServlet {
 			e.printStackTrace();
 		}
 		
-		*/
+		
 		employee.setEmail(request.getParameter("email"));
 		employee.setMobileNo(Integer.parseInt(request.getParameter("mobileNo")));
 		employee.setAddress(request.getParameter("address"));
-		employee.setDob(request.getParameter("dob"));
-		/*
+		//employee.setDob(request.getParameter("dob"));
+		
 		try {
 			Date dob = new SimpleDateFormat("yyyy/MM/dd").parse(request.getParameter("dob"));
 			employee.setDob(dob);
 		} catch (ParseException e) {
 			e.printStackTrace();
-		}*/
+		}
 		
 		
 		String eid = request.getParameter("eid");

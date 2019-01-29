@@ -20,7 +20,6 @@
 				<th>Email</th>
 				<th>MobileNo</th>
 				<th>Date</th>
-
 				<th>Address</th>
 				<th>Category</th>
 				<th>Description</th>
@@ -28,14 +27,19 @@
 			</tr>
 		</thead>
 		<tbody>
+		
+		
+		
+
+		
+		
 			<c:forEach items="${complains}" var="complain">
 				<tr>
 					<td><c:out value="${complain.complainid}" /></td>
 					<td><c:out value="${complain.complainer}" /></td>
 					<td><c:out value="${complain.email}" /></td>
 					<td><c:out value="${complain.mobileNo}" /></td>
-					<td><fmt:formatDate pattern="dd-MMM-yyyy-"
-							value="${complain.date}" /></td>
+					<td><c:out value="${complain.date}" /></td>
 					<td><c:out value="${complain.address}" /></td>
 					<td><c:out value="${complain.category}" /></td>
 					<td><c:out value="${complain.Description}" /></td>

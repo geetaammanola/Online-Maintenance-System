@@ -16,8 +16,6 @@ import com.serv.web.DAOImpl.ComplainDAOImpl;
 import com.serv.web.dao.ComplainDAO;
 import com.serv.web.modal.Complain;
 
-
-
 @WebServlet("/ComplainController")
 public class ComplainController extends HttpServlet {
 	/**
@@ -27,7 +25,6 @@ public class ComplainController extends HttpServlet {
 	private ComplainDAO dao;
 	public static final String addComplains = "/complain.jsp";
 	public static final String myComplains = "/UserListComplains.jsp";
-	
 
 	public ComplainController() {
 		dao = (ComplainDAO) new ComplainDAOImpl();
@@ -37,42 +34,38 @@ public class ComplainController extends HttpServlet {
 			throws ServletException, IOException {
 		String forward = "";
 		String action = request.getParameter("action");
-		
-		
-		if (action.equalsIgnoreCase("insert")) {
-			forward = addComplains;
-		} else {
-			forward = myComplains;
-			request.setAttribute("students", dao.getAllComplains());
-		}
-		
-		/*
 
 		if (action.equalsIgnoreCase("insert")) {
 			forward = addComplains;
-
 		} else {
 			forward = myComplains;
 			request.setAttribute("complains", dao.getAllComplains());
-		}*/
+		}
+
+	
 		RequestDispatcher view = request.getRequestDispatcher(forward);
 		view.forward(request, response);
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+
 		Complain complain = new Complain();
 
 		complain.setComplainer(request.getParameter("complainer"));
 		complain.setEmail(request.getParameter("email"));
 		complain.setMobileNo(Integer.parseInt(request.getParameter("mobileNo")));
-
-		try {
-			Date date = new SimpleDateFormat("dd/MM/yyyy").parse(request.getParameter("date"));
-			complain.setDate(date);
-		} catch (ParseException e) {
-			e.printStackTrace();
-		}
+		//complain.setDate(request.getParameter("date"));
+		
+		 
+		 try { 
+			 Date date = new
+		  SimpleDateFormat("yyyy/MM/dd").parse(request.getParameter("date"));
+		  complain.setDate(date); 
+		  } catch (ParseException e)
+		 { e.printStackTrace(); 
+		 }
+		
 
 		complain.setAddress(request.getParameter("address"));
 		complain.setCategory(request.getParameter("category"));
@@ -81,7 +74,10 @@ public class ComplainController extends HttpServlet {
 		String complainId = request.getParameter("complainid");
 
 		if (complainId == null || complainId.isEmpty()) {
+
 			dao.addComplain(complain);
+		}else {
+			
 		}
 
 		RequestDispatcher view = request.getRequestDispatcher(myComplains);

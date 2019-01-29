@@ -1,17 +1,17 @@
 package com.serv.web.modal;
 
-
+import java.util.Date;
 
 public class Employee {
 
 	private int eid;
 	private String role;
 	private String name;
-	private String doj;
+	private Date doj;
 	private String email;
 	private int mobileNo;
 	private String address;
-	private String dob;
+	private Date dob;
 
 	public int getEid() {
 		return eid;
@@ -64,29 +64,31 @@ public class Employee {
 	}
 
 	
-/*
+	public Date getDob() {
+        return dob;
+    }
+    public void setDob(Date dob) {
+        this.dob = dob;
+    }
+    
+    
+	
+
 	public Date getDoj() {
 		return doj;
 	}
 
 	public void setDoj(Date doj) {
-		this.doj = doj;
+		this.doj =  doj;
 	}
 
-	public Date getDob() {
-		return dob;
-	}
-
-	public void setDob(Date dob) {
-		this.dob = dob;
-	}*/
-
+	
 	@Override
 	public String toString() {
 		return "employee [eid=" + eid + ", role=" + role + ", name=" + name + ", doj=" + doj + ", email=" + email
 				+ ", mobileNo=" + mobileNo + ", address=" + address + ", dob=" + dob + "]";
 	}
-
+/*
 	public String getDoj() {
 		return doj;
 	}
@@ -102,7 +104,7 @@ public class Employee {
 	public void setDob(String dob) {
 		this.dob = dob;
 	}
-
+*/
 	
 
 }
